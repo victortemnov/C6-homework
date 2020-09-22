@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Show screen info</title>
+        <style>
+            .btn {
+                margin: 100px;
+                width: 250px;
+                height: 100px;
+                border-radius: 5px;
+                border-width: 5px;
+                border-color: mediumspringgreen;
+                background-color: blue;
+                color: turquoise;
+                font-size: 40px;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn">GET</button>
+        <script>
+            let currWidth = window.screen.width;
+            let currHeight = window.screen.height;
+            let currWidth1 = window.innerWidth;
+            let currHeight1 = window.innerHeight;
+            let currWidth2 = document.documentElement.clientWidth;
+            let currHeight2 = document.documentElement.clientHeight;
+            document.querySelector(".btn").addEventListener("click", () => {
+                alert(`
+                Screen width: ${currWidth}
+                Screen height: ${currHeight}
+
+                Inner width: ${currWidth1}
+                Inner height: ${currHeight1}
+                
+                cliendWidth: ${currWidth2}
+                clientHeigth: ${currHeight2}
+                `);
+            })
+        </script>
+    </body>
+</html

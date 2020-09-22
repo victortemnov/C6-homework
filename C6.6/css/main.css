@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: black; */
+    border-radius: 20px;
+}
+.command-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.message-area {
+    width: 100%;
+    padding: 20px;
+    border: 5px solid lightblue;
+}
+.send-btn, .geo-btn {
+    background-color: lightblue;
+    margin-left: 20px;
+    min-width: 100px;
+}
+.send-btn:hover, .geo-btn:hover {
+    background-color: greenyellow;
+}
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid lightblue;
+    min-height: 500px;
+    padding: 10px;
+}
+.set-msg, .get-msg {
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 13px 13px;
+}
+.set-msg {
+    border: 5px solid lightblue;
+    align-self: flex-end;
+    text-align: end;
+}
+.get-msg {
+    border: 5px solid rgb(98, 0, 255);
+    align-self: flex-start;
+    text-align: start;
+}
